@@ -52,6 +52,11 @@ using FlashWeave
 data_path = "/data/genome_abundances.tsv"
 metadata_path = "/data/genome_metadata.tsv"
 netw_results = learn_network(data_path, metadata_path, sensitive=true, heterogeneous=false)
+```
 
+## Visualise and save
+
+```sh
+save_network("/my/example/network_output.edgelist", netw_results)
 G = graph(netw_results)
 ```
