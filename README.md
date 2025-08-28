@@ -1,5 +1,7 @@
 # Protein efficiency Flashwave analysis
 
+Flashwave analysis of protein efficiency in Mjolnir.
+
 ## Input files
 
 Prepare input files in R and upload them to working directory: `protein_efficiency_flashwave/data`
@@ -14,7 +16,7 @@ screen -S protein_efficiency_flashwave
 
 ## Interactive session
 
-Create an interactive session in R
+Open an interactive session for 24h.
 
 ```sh
 srun \
@@ -27,5 +29,17 @@ srun \
   --pty bash -I
 ```
 
+## Open Julia
 
-Flashwave analysis of protein efficiency in Mjolnir.
+```sh
+module load julia
+julia
+```
+
+## Test Flashwave
+
+Use `]` to enter to package mode. Then,
+
+```sh
+test FlashWeave
+```
