@@ -38,7 +38,7 @@ julia
 
 ## Test Flashwave
 
-Use `]` to enter to package mode. Then,
+Test whether everything works fine with Flashwave. Use `]` to enter to package mode. Then,
 
 ```sh
 test FlashWeave
