@@ -43,3 +43,15 @@ Test whether everything works fine with Flashwave. Use `]` to enter to package m
 ```sh
 test FlashWeave
 ```
+
+## Run analysis
+
+```sh
+using FlashWeave
+
+data_path = "/data/genome_abundances.tsv"
+metadata_path = "/data/genome_metadata.tsv"
+netw_results = learn_network(data_path, metadata_path, sensitive=true, heterogeneous=false)
+
+G = graph(netw_results)
+```
