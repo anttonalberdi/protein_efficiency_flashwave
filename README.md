@@ -4,7 +4,7 @@ Flashwave analysis of protein efficiency in Mjolnir.
 
 ## Input files
 
-Prepare input files in R and upload them to working directory: `protein_efficiency_flashwave/data`
+Prepare input files in R and upload them to working directory. Note that MAGs must be in columns and samples in rows.
 
 ## Screen session
 
@@ -49,8 +49,8 @@ test FlashWeave
 ```sh
 using FlashWeave
 
-data_path = "/data/genome_abundances.tsv"
-metadata_path = "/data/genome_metadata.tsv"
+data_path = "counts.tsv"
+metadata_path = "metadata.tsv"
 netw_results = learn_network(data_path, metadata_path, sensitive=true, heterogeneous=false)
 ```
 
